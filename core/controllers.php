@@ -7,7 +7,7 @@ function homeController()
     return [
         "home",
         [
-            "title" => "Home"
+            "title" => "Kezdőlap"
         ]
     ];
 }
@@ -16,7 +16,7 @@ function notFoundController()
 {
     return [
         "404", [
-            "title" => "The page you are looking for is not found."
+            "title" => "A keresett oldal nem található."
         ]
     ];
 }
