@@ -10,7 +10,7 @@
     <!-- Description -->
     <meta name="description" content="MegaOne is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose studio and portfolio HTML5 template with ready home page demos.">
     <!-- Page Title -->
-    <title><?php echo 'Hidegteam Mobilmoso - ' . $title;  ?></title>
+    <title><?php echo 'HidegTeam Mobilmosó - ' . $title;  ?></title>
     <!-- Favicon -->
     <link href="cars-automobile/images/favicon.ico" rel="icon">
     <!-- Bundle -->

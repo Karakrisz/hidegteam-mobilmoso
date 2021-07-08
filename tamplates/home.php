@@ -5,7 +5,7 @@
                 <div class="row align-items-center">
                     <div class="col-12 col-md-6">
                         <h1 class="main-font font-weight-bold text-white">HidegTeam <span class="d-block text-blue">
-                                Mobilmoso </span></h1>
+                                Mobilmosó </span></h1>
                         <p class="alt-font text-white my-3">Kaposvár első mobil autókozmetikai szolgáltatása ott, AHOL és AMIKOR akarod!
                         </p>
                         <a href="tel:+36306088785" class="btn btn-medium btn-rounded btn-red text-capitalize mt-3 mb-5 mb-md-0">Hívás most</a>
@@ -201,24 +201,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td data-label="Alap">2.490 Ft</td>
-                        <td data-label="Prémium / Kozmikus">3.190 Ft</td>
-                        <td data-label="Professzionális / Galaktikus">4.990 Ft</td>
-                        <td data-label="-">Külső</td>
-                    </tr>
-                    <tr>
-                        <td scope="row" data-label="Alap">1.290 Ft</td>
-                        <td data-label="Prémium / Kozmikus">1.690 Ft</td>
-                        <td data-label="Professzionális / Galaktikus">2.990 Ft</td>
-                        <td data-label="-">Belső</td>
-                    </tr>
-                    <tr>
-                        <td scope="row" data-label="Alap">3.590 Ft</td>
-                        <td data-label="Prémium / Kozmikus">4.590 Ft</td>
-                        <td data-label="Professzionális / Galaktikus">7.590 Ft</td>
-                        <td data-label="-">Külső + belső</td>
-                    </tr>
+                    <?php foreach ($getKisAuto as $kisAuto) : ?>
+                        <tr>
+                            <td data-label="Alap"><?php esc($kisAuto["alap"]) ?></td>
+                            <td data-label="Prémium / Kozmikus"><?php esc($kisAuto["premium_kozmikus"]) ?></td>
+                            <td data-label="Professzionális / Galaktikus"><?php esc($kisAuto["professzionalis_galaktikus"]) ?></td>
+                            <td data-label="-"><?php esc($kisAuto["megjegyzes"]) ?></td>
+                        </tr>
+                    <?php endforeach; ?>
                 </tbody>
             </table>
 
@@ -233,24 +223,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td data-label="Alap">2.990 Ft</td>
-                        <td data-label="Prémium / Kozmikus">3.490 Ft</td>
-                        <td data-label="Professzionális / Galaktikus">5.490 Ft</td>
-                        <td data-label="-">Külső</td>
-                    </tr>
-                    <tr>
-                        <td scope="row" data-label="Alap">1.690 Ft</td>
-                        <td data-label="Prémium / Kozmikus">2.190 Ft</td>
-                        <td data-label="Professzionális / Galaktikus">3.690 Ft</td>
-                        <td data-label="-">Belső</td>
-                    </tr>
-                    <tr>
-                        <td scope="row" data-label="Alap">4.490 Ft</td>
-                        <td data-label="Prémium / Kozmikus">5.490 Ft</td>
-                        <td data-label="Professzionális / Galaktiku">8.490 Ft</td>
-                        <td data-label="-">Külső + belső</td>
-                    </tr>
+                    <?php foreach ($getVarosiAuto as $varosiAuto) : ?>
+                        <tr>
+                            <td data-label="Alap"><?php esc($varosiAuto["alap"]) ?></td>
+                            <td data-label="Prémium / Kozmikus"><?php esc($varosiAuto["premium_kozmikus"]) ?></td>
+                            <td data-label="Professzionális / Galaktikus"><?php esc($varosiAuto["professzionalis_galaktikus"]) ?></td>
+                            <td data-label="-"><?php esc($varosiAuto["megjegyzes"]) ?></td>
+                        </tr>
+                    <?php endforeach; ?>
                 </tbody>
             </table>
 
@@ -265,24 +245,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td data-label="Alap">3.490 Ft</td>
-                        <td data-label="Prémium / Kozmikus">3.990 Ft</td>
-                        <td data-label="Professzionális / Galaktikus">5.990 Ft</td>
-                        <td data-label="-">Külső</td>
-                    </tr>
-                    <tr>
-                        <td scope="row" data-label="Alap">2.190 Ft</td>
-                        <td data-label="Prémium / Kozmikus">2.690 Ft</td>
-                        <td data-label="Professzionális / Galaktikus">4.190 Ft</td>
-                        <td data-label="-">Belső</td>
-                    </tr>
-                    <tr>
-                        <td scope="row" data-label="Alap">5.490 Ft</td>
-                        <td data-label="Prémium / Kozmikus">6.490 Ft</td>
-                        <td data-label="Professzionális / Galaktikus">9.490 Ft</td>
-                        <td data-label="-">Külső + belső</td>
-                    </tr>
+                <?php foreach ($getCsaladiAuto as $csaladiAuto) : ?>
+                        <tr>
+                            <td data-label="Alap"><?php esc($csaladiAuto["alap"]) ?></td>
+                            <td data-label="Prémium / Kozmikus"><?php esc($csaladiAuto["premium_kozmikus"]) ?></td>
+                            <td data-label="Professzionális / Galaktikus"><?php esc($csaladiAuto["professzionalis_galaktikus"]) ?></td>
+                            <td data-label="-"><?php esc($csaladiAuto["megjegyzes"]) ?></td>
+                        </tr>
+                    <?php endforeach; ?>
                 </tbody>
             </table>
 

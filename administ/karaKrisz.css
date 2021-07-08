@@ -1,0 +1,163 @@
+/******************** display none start **********************/
+
+.header-top-menu.tabl-d-n.hd-search-rp {
+    display: none;
+}
+
+/********************  formating start **********************/
+
+.strong-font {
+    color: red !important;
+    font-weight: bold !important;
+    font-size: 17px !important;
+}
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 70px;
+}
+
+table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+
+table tr {
+    background-color: #141414;
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+
+table th,
+table td {
+    padding: .625em;
+    text-align: center;
+}
+
+table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.color-white {
+    color: white !important;
+}
+
+.all-content-wrapper--m0 {
+    margin: 0 !important;
+}
+
+.basic-form-area.mg-tb-15 {
+    width: 65%;
+    margin: 45px 0 10px 30px;
+}
+
+.basic-form-area--formating {
+    width: 95% !important;
+}
+
+.basic-login-form-ad__p.color-white {
+    margin-bottom: 30px;
+}
+
+.sparkline8-list.mt-b-30 {
+    text-align: center;
+}
+
+.basic-login-inner {
+    text-align: center !important;
+}
+
+.btn.btn-sm.btn-primary.pull-right.login-submit-cs {
+    float: none !important;
+    margin: 20px 0 10px 0px;
+    padding: 5px 40px;
+}
+
+.form-group-inner__label.color-white {
+    margin-bottom: 20px;
+    margin: 10px 0 25px 0;
+}
+
+.form-div-text-box__alert-box {
+    margin-top: 30px;
+    display: none;
+}
+
+.form-group-inner input[type="email"],
+.form-group-inner input[type="password"],
+.form-group-inner input[type="text"],
+.form-select-list .custom-select-value {
+    color: #dff0d8 !important;
+}
+
+.btn.btn-sm.btn-primary.pull-right.login-submit-cs.basic-form-area__link {
+    float: right !important;
+    position: relative;
+    margin: 0 0 20px 0;
+    padding: 10px 25px;
+    font-size: 13px;
+}
+
+.basic-form-area__table {
+    margin: 50px 0;
+}
+
+.basic-form-area__table__thead__h3.strong-font {
+    margin-top: 30px;
+}
+
+
+/******************** media query start **********************/
+
+@media screen and (max-width: 767px) {
+
+    table {
+        border: 0;
+    }
+
+    table caption {
+        font-size: 1.3em;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+}

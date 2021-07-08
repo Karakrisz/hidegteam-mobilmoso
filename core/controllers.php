@@ -2,12 +2,18 @@
 
 function homeController()
 {
-
+    $connection = getConnection();
+    $getKisAuto = kisAuto($connection);
+    $getVarosiAuto = varosiAuto($connection);
+    $getCsaladiAuto = csaladiAuto($connection);
 
     return [
         "home",
         [
-            "title" => "Kezdőlap"
+            "title" => "Kezdőlap",
+            "getKisAuto" => $getKisAuto,
+            "getVarosiAuto" => $getVarosiAuto,
+            "getCsaladiAuto" => $getCsaladiAuto,
         ]
     ];
 }

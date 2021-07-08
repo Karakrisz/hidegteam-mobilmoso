@@ -53,3 +53,39 @@ function getConnection()
     }
     return $connection;
 }
+
+function kisAuto($connection)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * from kis_auto')) {
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function varosiAuto($connection)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * from varosi_auto')) {
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
+
+function csaladiAuto($connection)
+{
+    if ($statement = mysqli_prepare($connection, 'SELECT * from csaladi_auto')) {
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        errorPage();
+    }
+}
