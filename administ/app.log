@@ -11,3 +11,5 @@
 [ERROR] Query error:Table 'traning.photo' doesn't exist
 [ERROR] Query error: No database selected
 [ERROR] Query error: Table 'hidegteam.kis_aut' doesn't exist
+[ERROR] Query error: Table 'hidegteam.kishaszonjar' doesn't exist
+[ERROR] Query error: Unknown column 'kishaszonjarmu_id' in 'where clause'

@@ -245,7 +245,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                <?php foreach ($getCsaladiAuto as $csaladiAuto) : ?>
+                    <?php foreach ($getCsaladiAuto as $csaladiAuto) : ?>
                         <tr>
                             <td data-label="Alap"><?php esc($csaladiAuto["alap"]) ?></td>
                             <td data-label="Prémium / Kozmikus"><?php esc($csaladiAuto["premium_kozmikus"]) ?></td>
@@ -267,24 +267,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td data-label="Alap">3.990 Ft</td>
-                        <td data-label="Prémium / Kozmikus">4.990 Ft</td>
-                        <td data-label="Professzionális / Galaktikus">6.990 Ft</td>
-                        <td data-label="-">Külső</td>
-                    </tr>
-                    <tr>
-                        <td scope="row" data-label="Alap">2.690 Ft</td>
-                        <td data-label="Prémium / Kozmikus">3.190 Ft</td>
-                        <td data-label="Professzionális / Galaktikus">4.690 Ft</td>
-                        <td data-label="-">Belső</td>
-                    </tr>
-                    <tr>
-                        <td scope="row" data-label="Alap">6.490 Ft</td>
-                        <td data-label="Prémium / Kozmikus">7.490 Ft</td>
-                        <td data-label="Professzionális / Galaktikus">10.490 Ft</td>
-                        <td data-label="-">Külső + belső</td>
-                    </tr>
+                    <?php foreach ($getSuvTerepjaro as $suvTerepjaro) : ?>
+                        <tr>
+                            <td data-label="Alap"><?php esc($suvTerepjaro["alap"]) ?></td>
+                            <td data-label="Prémium / Kozmikus"><?php esc($suvTerepjaro["premium_kozmikus"]) ?></td>
+                            <td data-label="Professzionális / Galaktikus"><?php esc($suvTerepjaro["professzionalis_galaktikus"]) ?></td>
+                            <td data-label="-"><?php esc($suvTerepjaro["megjegyzes"]) ?></td>
+                        </tr>
+                    <?php endforeach; ?>
                 </tbody>
             </table>
 
@@ -299,24 +289,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td data-label="Alap">4.990 Ft</td>
-                        <td data-label="Prémium / Kozmikus">5.990 Ft</td>
-                        <td data-label="Professzionális / Galaktikus">8.990 Ft</td>
-                        <td data-label="-">Külső</td>
-                    </tr>
-                    <tr>
-                        <td scope="row" data-label="Alap">3.490 Ft</td>
-                        <td data-label="Prémium / Kozmikus">4.490 Ft</td>
-                        <td data-label="Professzionális / Galaktikus">6.490 Ft</td>
-                        <td data-label="-">Belső</td>
-                    </tr>
-                    <tr>
-                        <td scope="row" data-label="Alap">8.490 Ft</td>
-                        <td data-label="Prémium / Kozmikus">9.490 Ft</td>
-                        <td data-label="Professzionális / Galaktikus">13.990 Ft</td>
-                        <td data-label="-">Külső + belső</td>
-                    </tr>
+                    <?php foreach ($getKishaszonjarmu as $kishaszonjarmu) : ?>
+                        <tr>
+                            <td data-label="Alap"><?php esc($kishaszonjarmu["alap"]) ?></td>
+                            <td data-label="Prémium / Kozmikus"><?php esc($kishaszonjarmu["premium_kozmikus"]) ?></td>
+                            <td data-label="Professzionális / Galaktikus"><?php esc($kishaszonjarmu["professzionalis_galaktikus"]) ?></td>
+                            <td data-label="-"><?php esc($kishaszonjarmu["megjegyzes"]) ?></td>
+                        </tr>
+                    <?php endforeach; ?>
                 </tbody>
             </table>
 
@@ -436,78 +416,45 @@
                     <div class="row mt-5 mt-md-0">
                         <div class="col-12 col-md-6">
                             <div class="parallax-box">
-                                <h4 class="parallax-box__h4">Fertőtlenítőszeres kezelés</h4>
-                                <h5 class="parallax-box__h5">2.790 Ft</h5>
+                                <?php foreach ($getBelsoExtrak as $belsoExtrak) : ?>
+                                    <h4 class="parallax-box__h4"><?php esc($belsoExtrak["belso_extrak_megnevezes"]) ?></h4>
+                                    <h5 class="parallax-box__h5"><?php esc($belsoExtrak["belso_extrak_ar"]) ?></h5>
+                                <?php endforeach; ?>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="parallax-box">
-                                <h4 class="parallax-box__h4">Szőnyegtisztítás (4 db) </h4>
-                                <h5 class="parallax-box__h5">1.990 Ft-tól</h5>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="parallax-box">
-                                <h4 class="parallax-box__h4">Légtér, klíma ózonos fertőtlenítése</h4>
-                                <h5 class="parallax-box__h5">7.490 Ft</h5>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="parallax-box">
-                                <h4 class="parallax-box__h4">Komplett kárpit tisztítás</h4>
-                                <h5 class="parallax-box__h5">18.990 Ft-tól</h5>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="parallax-box">
-                                <h4 class="parallax-box__h4">Folteltávolítás</h4>
-                                <h5 class="parallax-box__h5">4.490 Ft</h5>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="parallax-box">
-                                <h4 class="parallax-box__h4">Komplett bőrápolás</h4>
-                                <h5 class="parallax-box__h5">18.990 Ft-tól</h5>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="parallax-box">
-                                <h4 class="parallax-box__h4">Bőrápolás / ülés</h4>
-                                <h5 class="parallax-box__h5">4.490 Ft</h5>
-                            </div>
-                        </div>
+                    </div>
 
-                        <div class="col-12 col-md-6">
-                            <div class="parallax-box">
-                                <h4 class="parallax-box__h4 strong-font">Kedvezmények</h4>
-                                <h5 class="parallax-box__h5">Flotta kedvezmény (5, vagy e feletti számú autó esetén XXX % kedvezmény</h5>
-                                <h5 class="parallax-box__h5">5, vagy több jármű egyidejű takarítása XXX % kedvezmény</h5>
-                            </div>
+                    <div class="col-12 col-md-6">
+                        <div class="parallax-box">
+                            <h4 class="parallax-box__h4 strong-font">Kedvezmények</h4>
+                            <h5 class="parallax-box__h5">Flotta kedvezmény (5, vagy e feletti számú autó esetén XXX % kedvezmény</h5>
+                            <h5 class="parallax-box__h5">5, vagy több jármű egyidejű takarítása XXX % kedvezmény</h5>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="row align-items-center">
-                <div class="col-12 col-md-12">
-                    <div class="counter-content">
-                        <h3 class="my-3">Online foglalás</h3>
-                        <p class="alt-font">Ide kellene valami gomb, ami a beágyazott (gmail-es naptárunkkal összekötött pl. youcanbookme) naptárra irányít.</p>
-                    </div>
+        <div class="row align-items-center align-items-center--formating">
+            <div class="col-12 col-md-12">
+                <div class="counter-content">
+                    <h3 class="my-3">Online foglalás</h3>
+                    <p class="alt-font">Ide kellene valami gomb, ami a beágyazott (gmail-es naptárunkkal összekötött pl. youcanbookme) naptárra irányít.</p>
+                </div>
 
-                    <div class="counter-content">
-                        <h3 class="counter-content__h3" class="my-3">Gyakran Ismételt Kérdések</h3>
-                        <h5 class="counter-content__h5">Bankkártyával tudok fizetni?</h5>
-                        <p class="alt-font">Jelenleg a kártyás fizetés nem megoldható. A helyszínen készpénzzel lehet fizetni.</p>
-                        <h5 class="counter-content__h5">Hova tudok rendelni?</h5>
-                        <p class="alt-font">Mosóink csak a térképen jelölt xxx Zónába tudnak jelenleg kimenni. Ezt a területet folyamatosan bővítjük: (Kattints a képre.)</p>
-                        <h5 class="counter-content__h5">Mennyi időt vesz igénybe a mosás?</h5>
-                        <p class="alt-font">Ez attól függ milyen szolgáltatást, mekkora autóra kérsz. Telefonos megrendeléskor a kollégánk kiszámolja neked. De mindenképpen másfél órán belül elkészülünk, ha SOS rendelést adsz le. Ha pedig előrendelnél, akkor biztosan nem kell várakoznod.</p>
-                        <h5 class="counter-content__h5">Nem karcol?</h5>
-                        <p class="alt-font">Nem. A nanotechnológiának, eszközeinknek és munkatársunk elkötelezettségének köszönhetően semmilyen kárt nem ejtünk a fényezésen.</p>
-                    </div>
+                <div class="counter-content">
+                    <h3 class="counter-content__h3" class="my-3">Gyakran Ismételt Kérdések</h3>
+                    <h5 class="counter-content__h5">Bankkártyával tudok fizetni?</h5>
+                    <p class="alt-font">Jelenleg a kártyás fizetés nem megoldható. A helyszínen készpénzzel lehet fizetni.</p>
+                    <h5 class="counter-content__h5">Hova tudok rendelni?</h5>
+                    <p class="alt-font">Mosóink csak a térképen jelölt xxx Zónába tudnak jelenleg kimenni. Ezt a területet folyamatosan bővítjük: (Kattints a képre.)</p>
+                    <h5 class="counter-content__h5">Mennyi időt vesz igénybe a mosás?</h5>
+                    <p class="alt-font">Ez attól függ milyen szolgáltatást, mekkora autóra kérsz. Telefonos megrendeléskor a kollégánk kiszámolja neked. De mindenképpen másfél órán belül elkészülünk, ha SOS rendelést adsz le. Ha pedig előrendelnél, akkor biztosan nem kell várakoznod.</p>
+                    <h5 class="counter-content__h5">Nem karcol?</h5>
+                    <p class="alt-font">Nem. A nanotechnológiának, eszközeinknek és munkatársunk elkötelezettségének köszönhetően semmilyen kárt nem ejtünk a fényezésen.</p>
                 </div>
             </div>
+        </div>
     </section>
     <!-- END COUNTER -->
 

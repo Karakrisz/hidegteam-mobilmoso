@@ -45,47 +45,86 @@ function esc($string)
 
 function getConnection()
 {
-    global $config;
-    $connection = mysqli_connect($config['DB_HOST'], $config['DB_USER'], $config['DB_PASS'], $config['DB_NAME']);
-    if (!$connection) {
+    $dbc = mysqli_connect(HOST, DB_USER, DB_PASS, DB_NAME);
+    if (!$dbc) {
         logMessage('ERROR', 'Connection error:' . mysqli_connect_error());
         errorPage();
     }
-    return $connection;
+    return $dbc;
 }
 
-function kisAuto($connection)
+function kisAuto($dbc)
 {
-    if ($statement = mysqli_prepare($connection, 'SELECT * from kis_auto')) {
+    if ($statement = mysqli_prepare($dbc, 'SELECT * from kis_auto')) {
         mysqli_stmt_execute($statement);
         $result = mysqli_stmt_get_result($statement);
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
     } else {
-        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        logMessage('ERROR', 'Query error: ' . mysqli_error($dbc));
         errorPage();
     }
 }
 
-function varosiAuto($connection)
+function varosiAuto($dbc)
 {
-    if ($statement = mysqli_prepare($connection, 'SELECT * from varosi_auto')) {
+    if ($statement = mysqli_prepare($dbc, 'SELECT * from varosi_auto')) {
         mysqli_stmt_execute($statement);
         $result = mysqli_stmt_get_result($statement);
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
     } else {
-        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        logMessage('ERROR', 'Query error: ' . mysqli_error($dbc));
         errorPage();
     }
 }
 
-function csaladiAuto($connection)
+function csaladiAuto($dbc)
 {
-    if ($statement = mysqli_prepare($connection, 'SELECT * from csaladi_auto')) {
+    if ($statement = mysqli_prepare($dbc, 'SELECT * from csaladi_auto')) {
         mysqli_stmt_execute($statement);
         $result = mysqli_stmt_get_result($statement);
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
     } else {
-        logMessage('ERROR', 'Query error: ' . mysqli_error($connection));
+        logMessage('ERROR', 'Query error: ' . mysqli_error($dbc));
         errorPage();
     }
 }
+
+
+function suvTerepjaro($dbc)
+{
+    if ($statement = mysqli_prepare($dbc, 'SELECT * from suv_terepjaro')) {
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($dbc));
+        errorPage();
+    }
+}
+
+function kishaszonjarmu($dbc)
+{
+    if ($statement = mysqli_prepare($dbc, 'SELECT * from kishaszonjarmu')) {
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($dbc));
+        errorPage();
+    }
+}
+
+function belsoExtrak($dbc)
+{
+    if ($statement = mysqli_prepare($dbc, 'SELECT * from belso_extrak')) {
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($dbc));
+        errorPage();
+    }
+}
+
+
+var_dump(mysqli_fetch_all($result, MYSQLI_ASSOC));

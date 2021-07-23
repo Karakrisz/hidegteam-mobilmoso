@@ -160,4 +160,16 @@ table th {
     table td:last-child {
         border-bottom: 0;
     }
+
+    .basic-form-area.mg-tb-15 {
+        width: 100%;
+        margin: 0;
+        padding: 20px 10px;
+    }
+
+    .btn.btn-sm.btn-primary.pull-right.login-submit-cs.basic-form-area__link {
+        float: none !important;
+        margin: auto;
+        width: 100%;
+    }
 }

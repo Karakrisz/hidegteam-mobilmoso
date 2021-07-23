@@ -2,10 +2,13 @@
 
 function homeController()
 {
-    $connection = getConnection();
-    $getKisAuto = kisAuto($connection);
-    $getVarosiAuto = varosiAuto($connection);
-    $getCsaladiAuto = csaladiAuto($connection);
+    $dbc = getConnection();
+    $getKisAuto = kisAuto($dbc);
+    $getVarosiAuto = varosiAuto($dbc);
+    $getCsaladiAuto = csaladiAuto($dbc);
+    $getSuvTerepjaro = suvTerepjaro($dbc);
+    $getKishaszonjarmu = kishaszonjarmu($dbc);
+    $getBelsoExtrak = belsoExtrak($dbc);
 
     return [
         "home",
@@ -14,6 +17,9 @@ function homeController()
             "getKisAuto" => $getKisAuto,
             "getVarosiAuto" => $getVarosiAuto,
             "getCsaladiAuto" => $getCsaladiAuto,
+            "getSuvTerepjaro" => $getSuvTerepjaro,
+            "getKishaszonjarmu" => $getKishaszonjarmu,
+            "getBelsoExtrak" => $getBelsoExtrak,
         ]
     ];
 }
