@@ -1,4 +1,15 @@
-<?php require_once 'header.php'; ?>
+<?php
+
+require_once 'header.php';
+require_once 'functions.php';
+
+if (!isset($_SESSION['user'])) {
+    header('Location: login.php');
+}
+
+$user = createUser();
+
+?>
 
 <body>
     <?php require_once 'nav.php'; ?>

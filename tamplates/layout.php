@@ -14,6 +14,7 @@
     <!-- Favicon -->
     <link href="cars-automobile/images/favicon.ico" rel="icon">
     <!-- Bundle -->
+    <link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css" />
     <link href="vendor/css/bundle.min.css" rel="stylesheet">
     <!-- Plugin Css -->
     <link href="vendor/css/LineIcons.min.css" rel="stylesheet">
@@ -26,6 +27,7 @@
     <link href="cars-automobile/css/model-window.css" rel="stylesheet">
     <link href="cars-automobile/css/style.css" rel="stylesheet">
     <link href="karaKrisz/css/style.css" rel="stylesheet">
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="90">

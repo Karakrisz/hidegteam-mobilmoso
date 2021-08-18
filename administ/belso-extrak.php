@@ -4,7 +4,6 @@ require_once 'functions.php';
 
 <body>
     <?php require_once 'nav.php'; ?>
-    <audio id="beep__active" src="http://freesound.org/data/previews/263/263133_2064400-lq.mp3"></audio>
     <!-- Start Welcome area -->
     <div class="all-content-wrapper">
         <!-- Basic Form Start -->

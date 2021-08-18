@@ -13,3 +13,11 @@
 [ERROR] Query error: Table 'hidegteam.kis_aut' doesn't exist
 [ERROR] Query error: Table 'hidegteam.kishaszonjar' doesn't exist
 [ERROR] Query error: Unknown column 'kishaszonjarmu_id' in 'where clause'
+[ERROR] Query error: Table 'hidegteam.telefonsza' doesn't exist
+[ERROR] Query error: Unknown column 'admim_email' in 'field list'
+[ERROR] Query error: Unknown column 'admim_email' in 'field list'
+[ERROR] Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') VALUES (?,?,?)' at line 1
+[ERROR] Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE kapcsolat_id = ?' at line 1
+[ERROR] Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE kapcsolat_id = ?' at line 1
+[ERROR] 2021-07-27T00:55:58+0200 /Applications/XAMPP/xamppfiles/htdocs/hidegteam-mobilmoso/administ/functions.php:500 Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE kapcsolat_id = ?' at line 1
+[ERROR] 2021-08-18T11:20:15+0200 /Applications/XAMPP/xamppfiles/htdocs/hidegteam-mobilmoso/administ/functions.php:560 Query error: Unknown column 'kapcsolat_id' in 'where clause'

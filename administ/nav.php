@@ -26,12 +26,15 @@
                             <span class="mini-click-non">Weboldal</span>
                         </a>
                         <ul class="submenu-angle" aria-expanded="true">
+                            <li><a title="Dashboard v.2" href="bekoszono-szoveg.php"><span class="mini-sub-pro">Beköszönő szöveg</span></a></li>
                             <li><a title="Dashboard v.1" href="kis-auto.php"><span class="mini-sub-pro">Kiss autó</span></a></li>
                             <li><a title="Dashboard v.2" href="varosi-auto.php"><span class="mini-sub-pro">Városi autó</span></a></li>
                             <li><a title="Dashboard v.2" href="csaladi-auto.php"><span class="mini-sub-pro">Családi autó</span></a></li>
                             <li><a title="Dashboard v.2" href="suv-terepjaro.php"><span class="mini-sub-pro">Suv terepjárók</span></a></li>
                             <li><a title="Dashboard v.2" href="kishaszonjarmu.php"><span class="mini-sub-pro">Kishaszonjármű</span></a></li>
                             <li><a title="Dashboard v.2" href="belso-extrak.php"><span class="mini-sub-pro">Belső extrák</span></a></li>
+                            <li><a title="Dashboard v.2" href="telefonszam.php"><span class="mini-sub-pro">Telefonszám</span></a></li>
+                            <li><a title="Dashboard v.2" href="kapcsolat.php"><span class="mini-sub-pro">Kapcsolat</span></a></li>
                         </ul>
                     </li>
                 </ul>

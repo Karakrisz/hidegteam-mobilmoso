@@ -14,7 +14,7 @@ require_once 'functions.php';
             <div class="sparkline8-list mt-b-30">
               <div class="sparkline8-hd">
                 <div class="main-sparkline8-hd">
-                  <h1 class="color-white">SUV, TEREPJÁRÓ</h1>
+                  <h1 class="color-white">Kapcsolat</h1>
                 </div>
               </div>
               <div class="sparkline8-graph">
@@ -23,26 +23,22 @@ require_once 'functions.php';
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                       <div class="basic-login-inner">
                         <p class="basic-login-form-ad__p color-white">Tölts ki minden mezőt a rögzítéshez</p>
-                        <form id="suvTerepjaroInsert" action="suv-terepjaro.php" method="POST">
+                        <form id="kapcsolatInsert" action="kapcsolat.php" method="POST">
                           <div class="form-group-inner">
-                            <label class="form-group-inner__label color-white">Alap</label>
-                            <input name="suv_terepjaro_alap" id="suv_terepjaro_alap" type="text" class="form-control" placeholder="Alap ár" required />
+                            <label class="form-group-inner__label color-white">Cím (address)</label>
+                            <input name="address" id="address" type="text" class="form-control" placeholder="Cím (address)" required />
                           </div>
                           <div class="form-group-inner">
-                            <label class="form-group-inner__label color-white">Prémium / Kozmikus</label>
-                            <input name="suv_terepjaro_premium_kozmikus" id="suv_terepjaro_premium_kozmikus" type="text" class="form-control" placeholder="Prémium / Kozmikus ár" required />
+                            <label class="form-group-inner__label color-white">Telefon</label>
+                            <input name="telefon" id="telefon" type="text" class="form-control" placeholder="Telefon" required />
                           </div>
                           <div class="form-group-inner">
-                            <label class="form-group-inner__label color-white">Professzionális / Galaktikus</label>
-                            <input name="suv_terepjaro_professzionalis_galaktikus" id="suv_terepjaro_professzionalis_galaktikus" type="text" class="form-control" placeholder="Professzionális / Galaktikus ár" required />
-                          </div>
-                          <div class="form-group-inner">
-                            <label class="form-group-inner__label color-white">Megjegyzés</label>
-                            <input name="suv_terepjaro_megjegyzes" id="suv_terepjaro_megjegyzes" type="text" class="form-control" placeholder="Külsö, belső..." required />
+                            <label class="form-group-inner__label color-white">E - mail</label>
+                            <input name="admin_email" id="admin_email" type="text" class="form-control" placeholder="E - mail" required />
                           </div>
                           <div class="login-btn-inner">
                             <div class="inline-remember-me">
-                              <input type="hidden" name="event" id="event" value="suvTerepjaroInsert">
+                              <input type="hidden" name="event" id="event" value="kapcsolatInsert">
                               <button class="btn btn-sm btn-primary pull-right login-submit-cs" type="submit">Rögzítés</button>
                             </div>
                           </div>
@@ -59,7 +55,7 @@ require_once 'functions.php';
                 </div>
               </div>
             </div>
-            <a href="suv-terepjarok.php" class="btn btn-sm btn-primary pull-right login-submit-cs basic-form-area__link">Rögzített rekordok megtekintése</a>
+            <a href="kapcsolatok.php" class="btn btn-sm btn-primary pull-right login-submit-cs basic-form-area__link">Rögzített rekordok megtekintése</a>
           </div>
         </div>
       </div>
@@ -70,17 +66,17 @@ require_once 'functions.php';
     // karaKrisz start
 
     // Ajax 
-    $("#suvTerepjaroInsert").submit(function(event) {
+    $("#kapcsolatInsert").submit(function(event) {
       event.preventDefault();
-      var event = 'suvTerepjaroInsert';
-      var suv_terepjaro_alap = $("#suv_terepjaro_alap").val();
-      var suv_terepjaro_premium_kozmikus = $("#suv_terepjaro_premium_kozmikus").val();
-      var suv_terepjaro_professzionalis_galaktikus = $("#suv_terepjaro_professzionalis_galaktikus").val();
-      var suv_terepjaro_megjegyzes = $("#suv_terepjaro_megjegyzes").val();
+      var event = 'kapcsolatInsert';
+      var address = $("#address").val();
+      var telefon = $("#telefon").val();
+      var admin_email = $("#admin_email").val();
+
       $.ajax({
         type: "POST",
-        url: "suv-terepjaro.php",
-        data: "suv_terepjaro_alap=" + suv_terepjaro_alap + "&event=" + event + "&suv_terepjaro_premium_kozmikus=" + suv_terepjaro_premium_kozmikus + "&suv_terepjaro_professzionalis_galaktikus=" + suv_terepjaro_professzionalis_galaktikus + "&suv_terepjaro_megjegyzes=" + suv_terepjaro_megjegyzes,
+        url: "kis-auto.php",
+        data: "address=" + address + "&event=" + event + "&telefon=" + telefon + "&admin_email=" + admin_email,
         success: function() {
           $('.form-div-text-box__alert-box').fadeIn();
           $('.form-div-text-box__alert-box__p').text('Adat rögzítve!');

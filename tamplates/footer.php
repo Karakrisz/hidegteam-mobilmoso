@@ -1,4 +1,5 @@
     <!-- JavaScript -->
+    <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
     <script src="vendor/js/bundle.min.js"></script>
     <!-- Plugin Js -->
     <script src="vendor/js/jquery.appear.js"></script>
@@ -24,3 +25,4 @@
     <!-- CUSTOM JS -->
     <script src="vendor/js/contact_us.js"></script>
     <script src="cars-automobile/js/script.js"></script>
+    <script src="karaKrisz/js/app.js"></script>

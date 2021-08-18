@@ -32,3 +32,17 @@ $kishaszonjarmu_id = filter_input(INPUT_GET, "kishaszonjarmu_id", FILTER_SANITIZ
 $belso_extrak_megnevezes = filter_input(INPUT_POST, "belso_extrak_megnevezes", FILTER_SANITIZE_SPECIAL_CHARS);
 $belso_extrak_ar = filter_input(INPUT_POST, "belso_extrak_ar", FILTER_SANITIZE_SPECIAL_CHARS);
 $belso_extrak_id = filter_input(INPUT_GET, "belso_extrak_id", FILTER_SANITIZE_SPECIAL_CHARS);
+
+$telefonszam = filter_input(INPUT_POST, "telefonszam", FILTER_SANITIZE_SPECIAL_CHARS);
+$telefonszam_id = filter_input(INPUT_GET, "telefonszam_id", FILTER_SANITIZE_SPECIAL_CHARS);
+
+$address = filter_input(INPUT_POST, "address", FILTER_SANITIZE_SPECIAL_CHARS);
+$telefon = filter_input(INPUT_POST, "telefon", FILTER_SANITIZE_SPECIAL_CHARS);
+$admin_email = filter_input(INPUT_POST, "admin_email", FILTER_SANITIZE_SPECIAL_CHARS);
+$kapcsolat_id = filter_input(INPUT_GET, "kapcsolat_id", FILTER_SANITIZE_SPECIAL_CHARS);
+
+$bekoszono_szoveg = filter_input(INPUT_POST, "bekoszono_szoveg", FILTER_SANITIZE_SPECIAL_CHARS);
+$bekoszono_szoveg_id = filter_input(INPUT_GET, "bekoszono_szoveg_id", FILTER_SANITIZE_SPECIAL_CHARS);
+
+$password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_SPECIAL_CHARS);
+$email = filter_input(INPUT_POST, "useremail", FILTER_SANITIZE_SPECIAL_CHARS);

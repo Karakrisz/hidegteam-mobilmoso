@@ -6,20 +6,23 @@
                     <div class="col-12 col-md-6">
                         <h1 class="main-font font-weight-bold text-white">HidegTeam <span class="d-block text-blue">
                                 Mobilmosó </span></h1>
-                        <p class="alt-font text-white my-3">Kaposvár első mobil autókozmetikai szolgáltatása ott, AHOL és AMIKOR akarod!
-                        </p>
-                        <a href="tel:+36306088785" class="btn btn-medium btn-rounded btn-red text-capitalize mt-3 mb-5 mb-md-0">Hívás most</a>
+                        <?php foreach ($getBekoszonoSzoveg as $bekoszonoSzoveg) : ?>
+                            <p class="alt-font text-white my-3"><?php esc($bekoszonoSzoveg["bekoszono_szoveg"]) ?></p>
+                        <?php endforeach; ?>
+                        <?php foreach ($getTelefonszam as $telefonszam) : ?>
+                            <a href="tel:+<?php esc($telefonszam["telefonszam"]) ?>" class="btn btn-medium btn-rounded btn-red text-capitalize mt-3 mb-5 mb-md-0">Hívás most</a>
+                        <?php endforeach; ?>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="banner-image" data-depth="0.07">
-                            <img src="cars-automobile/images/banner-product.png" alt="Hidegteam Mobilmoso">
+                            <img src="karaKrisz/img/slider-img.jpg" alt="Hidegteam Mobilmoso">
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Circle-One -->
             <div class="circle-one">
-                <span data-tootik="Side Mirror" data-tootik-conf="top invert square shadow">
+                <span data-tootik="Tisztít" data-tootik-conf="top invert square shadow">
                     <a href="javascript:void(0);">
                         <span class="animated-circle position-relative"></span>
                     </a>
@@ -27,7 +30,7 @@
             </div>
             <!-- Circle-Two -->
             <div class="circle-two">
-                <span data-tootik="Glass Roof" data-tootik-conf="bottom invert square shadow">
+                <span data-tootik="Ápol" data-tootik-conf="bottom invert square shadow">
                     <a href="javascript:void(0);">
                         <span class="animated-circle position-relative"></span>
                     </a>
@@ -35,23 +38,7 @@
             </div>
             <!-- Circle-Three -->
             <div class="circle-three">
-                <span data-tootik="Back Light" data-tootik-conf="top invert square shadow">
-                    <a href="javascript:void(0);">
-                        <span class="animated-circle position-relative"></span>
-                    </a>
-                </span>
-            </div>
-            <!-- Circle-Four -->
-            <div class="circle-four">
-                <span data-tootik="Front Bumper" data-tootik-conf="bottom invert square shadow">
-                    <a href="javascript:void(0);">
-                        <span class="animated-circle position-relative"></span>
-                    </a>
-                </span>
-            </div>
-            <!-- Circle-Five -->
-            <div class="circle-five">
-                <span data-tootik="Side Skits" data-tootik-conf="top invert square shadow">
+                <span data-tootik="Konzervál" data-tootik-conf="top invert square shadow">
                     <a href="javascript:void(0);">
                         <span class="animated-circle position-relative"></span>
                     </a>
@@ -80,14 +67,14 @@
                 <div class="col-12 col-md-4">
                     <div class="news-item">
                         <div class="image-holder-gallery">
-                            <img alt="image" src="cars-automobile/images/about-img-1.jpg">
+                            <img alt="image" src="karaKrisz/img/about-us/tisztitas.jpg">
                         </div>
                         <div class="news-text-box">
                             <a href="#">
                                 <h4 class="news-title main-font">Tisztítás</h4>
                             </a>
                             <p class="para alt-font">A speciális készítmény a felületre való permetezést követően azonnal elkezdi kifejteni hatását, a nano részecskéinek köszönhetően a szennyeződést “bekebelezve” egy biztonsági réteget képez a tisztítandó felület, és az eltávolítandó koszréteg között. A nagyjából 1000x kisebb nanorészecskéknek köszönhetően a szennyeződés eltávolítása biztonságos. </p>
-                            <a href="cars-automobile/standalone.html" class="text-capitalize btn-red">Bővebben</a>
+                            <!-- <a href="cars-automobile/standalone.html" class="text-capitalize btn-red">Bővebben</a> -->
                         </div>
                     </div>
                 </div>
@@ -95,14 +82,14 @@
                 <div class="col-12 col-md-4">
                     <div class="news-item">
                         <div class="image-holder-gallery">
-                            <img alt="image" src="cars-automobile/images/about-img-2.jpg">
+                            <img alt="image" src="karaKrisz/img/about-us/apolas.jpg">
                         </div>
                         <div class="news-text-box">
                             <a href="#">
                                 <h4 class="news-title main-font">Ápolás</h4>
                             </a>
                             <p class="para alt-font">A mosószer alapanyaga jó minőségű carnauba viaszt tartalmaz, mely kitölti a fényezésen lévő, szemmel alig, vagy egyáltalán nem látható mikro karcokat. Ennek és a jó minőségű, magas szálsűrűségű speciális törlőkendőnek köszönhetően a szennyeződés könnyen eltávolítható a felületről karcolás nélkül.</p>
-                            <a href="cars-automobile/standalone.html" class="text-capitalize btn-red">Bővebben</a>
+                            <!-- <a href="cars-automobile/standalone.html" class="text-capitalize btn-red">Bővebben</a> -->
                         </div>
                     </div>
                 </div>
@@ -110,14 +97,14 @@
                 <div class="col-12 col-md-4">
                     <div class="news-item">
                         <div class="image-holder-gallery">
-                            <img alt="image" src="cars-automobile/images/about-img-3.jpg">
+                            <img alt="image" src="karaKrisz/img/about-us/konverzal.jpg">
                         </div>
                         <div class="news-text-box">
                             <a href="#">
                                 <h4 class="news-title main-font">Konzerválás</h4>
                             </a>
                             <p class="para alt-font">A carnauba viasz 48 órán keresztül fejti ki aktív szennyeződés, por, és víztaszító hatását. A “mosás” után az autó felületére kerülő anyagok kevésbé tapadnak meg, így az hosszabb ideig marad tiszta, valamint tartós, magas fényű csillogást kölcsönöz a felületnek</p>
-                            <a href="cars-automobile/standalone.html" class="text-capitalize btn-red">Bővebben</a>
+                            <!-- <a href="cars-automobile/standalone.html" class="text-capitalize btn-red">Bővebben</a> -->
                         </div>
                     </div>
                 </div>
@@ -131,65 +118,63 @@
         <div class="container position-relative">
             <div class="row main-heading">
                 <div class="col-12 main-heading text-center">
-                    <h2 class="main-font">Accessories<span class="d-block text-blue">Latest Products</span></h2>
+                    <h2 class="main-font">HidegTeam
+                        <span class="d-block text-blue">Referenciák</span>
+                    </h2>
                 </div>
             </div>
 
-            <!-- Products -->
-            <div class="row row-padding">
-                <div class="owl-products owl-carousel owl-theme">
-                    <!--Item 1-->
-                    <div class="team-box item">
-                        <!--Product Image-->
-                        <div class="team-image">
-                            <img src="cars-automobile/images/product-img1.png" alt="image">
-                        </div>
-                        <!--Product Text-->
-                        <div class="team-text">
-                            <h5 class="main-font">Imported Car Tire Wheel</h5>
-                            <a onclick="morphic_window('morphic-window1');" class="btn btn-medium btn-rounded btn-red text-capitalize mt-3 mb-5 mb-md-0">View
-                                Detail</a>
-                        </div>
-                    </div>
-                    <!--Item 2-->
-                    <div class="team-box item">
-                        <!--Product Image-->
-                        <div class="team-image">
-                            <img src="cars-automobile/images/product-img2.png" alt="image">
-                        </div>
-                        <!--Product Text-->
-                        <div class="team-text">
-                            <h5 class="main-font">Tire Alloy Rims</h5>
-                            <a onclick="morphic_window('morphic-window2');" class="btn btn-medium btn-rounded btn-red text-capitalize mt-3 mb-5 mb-md-0">View
-                                Detail</a>
-                        </div>
-                    </div>
-                    <!--Item 3-->
-                    <div class="team-box item">
-                        <!--Product Image-->
-                        <div class="team-image">
-                            <img src="cars-automobile/images/product-img3.png" alt="image">
-                        </div>
-                        <!--Product Text-->
-                        <div class="team-text">
-                            <h5 class="main-font">Engine Suspension</h5>
-                            <a onclick="morphic_window('morphic-window3');" class="btn btn-medium btn-rounded btn-red text-capitalize mt-3 mb-5 mb-md-0">View
-                                Detail</a>
+            <div class="row">
+
+                <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+                    <div id="slider1" class="beer-slider" data-beer-label="before" data-start="25">
+                        <img class="slider1__img" src="karaKrisz/img/referencia/referencia.jpg" alt="Dogs - before, unprocessed image">
+                        <div class="beer-reveal" data-beer-label="after">
+                            <img class="slider1__img" src="karaKrisz/img/referencia/referencia-2.jpg" alt="Dogs - after, processed photo">
                         </div>
                     </div>
                 </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+                    <div id="slider2" class="beer-slider beer-slider-wlabels" data-beer-label="before" data-start="75">
+                        <img class="slider1__img" src="karaKrisz/img/referencia/referencia-3.jpg" alt="Original baltic seashore">
+                        <div class="beer-reveal" data-beer-label="after">
+                            <img class="slider1__img" src="karaKrisz/img/referencia/referencia-4.jpg" alt="Baltic seashore - processed image Warmsphere preset">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+                    <div id="slider3" class="beer-slider beer-slider-wlabels" data-start="75">
+                        <img class="slider1__img" src="karaKrisz/img/referencia/referencia-5.jpg" alt="Original baltic seashore">
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+                    <div id="slider3" class="beer-slider beer-slider-wlabels" data-start="75">
+                        <img class="slider1__img" src="karaKrisz/img/referencia/referencia-6.jpg" alt="Original baltic seashore">
+                    </div>
+                </div>
+
+
+                <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+                    <div id="slider3" class="beer-slider beer-slider-wlabels" data-start="75">
+                        <img class="slider1__img" src="karaKrisz/img/referencia/referencia-7.jpg" alt="Original baltic seashore">
+                    </div>
+                </div>
+
             </div>
-            <!--Owl Nav-->
-            <a class='circle' id="team-circle-left"><i class="lni lni-chevron-left"></i></a>
-            <a class='circle' id="team-circle-right"><i class="lni lni-chevron-right"></i></a>
+
         </div>
     </section>
     <!-- END PRODUCTS -->
 
     <!-- START COUNTER -->
-    <section class="counter-bg">
+    <section class="counter-bg" id="reviews">
         <div class="container counter-container position-relative">
-            <h3 class="counter-container__h3">Szolgáltatásaink és áraink</h3>
+            <h2 class="main-font counter-container__h2">Szolgáltatásaink
+                <span class="d-block text-blue">és áraink</span>
+            </h2>
             <table>
                 <thead>
                     <h3 class="counter-container__table__thead__h3 strong-font">Kis autó (3,8m)</h3>
@@ -435,23 +420,25 @@
             </div>
         </div>
 
-        <div class="row align-items-center align-items-center--formating">
-            <div class="col-12 col-md-12">
-                <div class="counter-content">
-                    <h3 class="my-3">Online foglalás</h3>
-                    <p class="alt-font">Ide kellene valami gomb, ami a beágyazott (gmail-es naptárunkkal összekötött pl. youcanbookme) naptárra irányít.</p>
-                </div>
+        <div class="row align-items-center">
+            <div class="container">
+                <div class="col-12 col-md-12">
+                    <div class="counter-content">
+                        <h3 class="my-3">Online foglalás</h3>
+                        <p class="alt-font">Ide kellene valami gomb, ami a beágyazott (gmail-es naptárunkkal összekötött pl. youcanbookme) naptárra irányít.</p>
+                    </div>
 
-                <div class="counter-content">
-                    <h3 class="counter-content__h3" class="my-3">Gyakran Ismételt Kérdések</h3>
-                    <h5 class="counter-content__h5">Bankkártyával tudok fizetni?</h5>
-                    <p class="alt-font">Jelenleg a kártyás fizetés nem megoldható. A helyszínen készpénzzel lehet fizetni.</p>
-                    <h5 class="counter-content__h5">Hova tudok rendelni?</h5>
-                    <p class="alt-font">Mosóink csak a térképen jelölt xxx Zónába tudnak jelenleg kimenni. Ezt a területet folyamatosan bővítjük: (Kattints a képre.)</p>
-                    <h5 class="counter-content__h5">Mennyi időt vesz igénybe a mosás?</h5>
-                    <p class="alt-font">Ez attól függ milyen szolgáltatást, mekkora autóra kérsz. Telefonos megrendeléskor a kollégánk kiszámolja neked. De mindenképpen másfél órán belül elkészülünk, ha SOS rendelést adsz le. Ha pedig előrendelnél, akkor biztosan nem kell várakoznod.</p>
-                    <h5 class="counter-content__h5">Nem karcol?</h5>
-                    <p class="alt-font">Nem. A nanotechnológiának, eszközeinknek és munkatársunk elkötelezettségének köszönhetően semmilyen kárt nem ejtünk a fényezésen.</p>
+                    <div class="counter-content">
+                        <h3 class="counter-content__h3" class="my-3">Gyakran Ismételt Kérdések</h3>
+                        <h5 class="counter-content__h5">Bankkártyával tudok fizetni?</h5>
+                        <p class="alt-font">Jelenleg a kártyás fizetés nem megoldható. A helyszínen készpénzzel lehet fizetni.</p>
+                        <h5 class="counter-content__h5">Hova tudok rendelni?</h5>
+                        <p class="alt-font">Mosóink csak a térképen jelölt xxx Zónába tudnak jelenleg kimenni. Ezt a területet folyamatosan bővítjük: (Kattints a képre.)</p>
+                        <h5 class="counter-content__h5">Mennyi időt vesz igénybe a mosás?</h5>
+                        <p class="alt-font">Ez attól függ milyen szolgáltatást, mekkora autóra kérsz. Telefonos megrendeléskor a kollégánk kiszámolja neked. De mindenképpen másfél órán belül elkészülünk, ha SOS rendelést adsz le. Ha pedig előrendelnél, akkor biztosan nem kell várakoznod.</p>
+                        <h5 class="counter-content__h5">Nem karcol?</h5>
+                        <p class="alt-font">Nem. A nanotechnológiának, eszközeinknek és munkatársunk elkötelezettségének köszönhetően semmilyen kárt nem ejtünk a fényezésen.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -459,7 +446,7 @@
     <!-- END COUNTER -->
 
     <!-- START TESTIMONIALS -->
-    <section class="section slide4 reviews" id="reviews">
+    <!-- <section class="section slide4 reviews">
         <div class="container expand-container">
             <div class="row main-heading">
                 <div class="col-12 main-heading text-center">
@@ -467,9 +454,8 @@
                 </div>
             </div>
 
-            <!-- Testimonial Slider -->
             <div id="testimonial-carousal" class="owl-carousel owl-theme testimonial-owl text-center row-padding">
-                <!-- Item-1 -->
+ 
                 <div class="item">
                     <div class="icon-quotes mb-4">
                         <i class="fas fa-quote-left"></i>
@@ -485,7 +471,7 @@
                         <h3 class="mb-0 text-red alt-font">David Miller</h3>
                     </div>
                 </div>
-                <!-- Item-2 -->
+
                 <div class="item">
                     <div class="icon-quotes mb-4">
                         <i class="fas fa-quote-left"></i>
@@ -500,7 +486,7 @@
                         <h3 class="mb-0 text-blue alt-font">Alex Jackson</h3>
                     </div>
                 </div>
-                <!-- Item-3 -->
+
                 <div class="item">
                     <div class="icon-quotes mb-4">
                         <i class="fas fa-quote-left"></i>
@@ -516,7 +502,7 @@
                         <h3 class="mb-0 text-red alt-font">Mark Anthony</h3>
                     </div>
                 </div>
-                <!-- Item-4 -->
+
                 <div class="item">
                     <div class="icon-quotes mb-4">
                         <i class="fas fa-quote-left"></i>
@@ -533,7 +519,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- END TESTIMONIALS -->
 
     <!-- START CONTACT -->
@@ -541,8 +527,8 @@
         <div class="container expand-container">
             <div class="row row">
                 <div class="col-12 col-lg-7 main-heading">
-                    <h2 class="main-font">Questions?<span class="d-block text-blue">Lets Get In Touch</span></h2>
-                    <form class="row contact-form row-padding" id="contact-form-data">
+                    <h2 class="main-font">HidegTeam<span class="d-block text-blue contact-sec__h2__span">Kapcsolat</span></h2>
+                    <!-- <form class="row contact-form row-padding" id="contact-form-data">
                         <div class="col-12 col-lg-8" id="result"></div>
                         <div class="col-12 col-lg-8">
                             <input type="text" name="userName" placeholder="Name" class="form-control">
@@ -552,13 +538,13 @@
                             <a href="javascript:void(0);" class="btn btn-medium btn-rounded btn-red rounded-pill w-100 contact_btn main-font">Submit
                                 Information</a>
                         </div>
-                    </form>
+                    </form> -->
                 </div>
-                <div class="col-12 col-lg-5 text-center text-lg-left d-flex align-items-center">
+                <div class="col-12 col-lg-12 text-center text-lg-left d-flex align-items-center">
                     <div class="contact-details wow fadeInRight">
-                        <h4 class="heading main-font">Store Location</h4>
+                        <!-- <h4 class="heading main-font">Store Location</h4>
                         <p class="text alt-font">There are many variations of passages of Lorem Ipsum available, but the
-                            majority have suffered .</p>
+                            majority have suffered .</p> -->
                         <ul>
                             <li><i aria-hidden="true" class="fas fa-map-marker-alt"></i> 123 Park Avenue, New York,
                                 United States </li>
@@ -571,11 +557,7 @@
                         <div class="slider-social side-icons">
                             <ul class="list-unstyled d-flex">
                                 <a class="social-icon" href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a>
-                                <a class="social-icon" href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
-                                <a class="social-icon" href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a>
                                 <a class="social-icon" href="javascript:void(0);"><i class="fab fa-instagram"></i></a>
-                                <a class="social-icon" href="javascript:void(0);"><i class="fab fa-pinterest-p"></i></a>
-                                <a class="social-icon" href="javascript:void(0);"><i class="fab fa-google-plus-g"></i></a>
                             </ul>
                         </div>
                     </div>

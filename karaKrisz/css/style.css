@@ -11,17 +11,40 @@
     margin-bottom: 20px;
 }
 
-.row.align-items-center.align-items-center--formating {
-    padding: 0;
-    margin: 0 110px;
-}
 
 #sidemenu_toggle {
     display: none !important;
 }
 
+.navbar-brand {
+    width: 180px !important;
+    max-width: 180px !important;
+}
+
+.center-brand .navbar-brand {
+    top: 70% !important;
+}
+
+.navbar.fixedmenu .logo-default,
+.navbar .logo-scrolled {
+    width: 120px;
+    position: relative;
+    bottom: 13px;
+}
+
+.fixedmenu {
+    height: 100px !important;
+}
+
 /******************** counter start **********************/
 
+.counter-container__h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+}
 
 .counter-container__h3 {
     margin-bottom: 50px;
@@ -119,29 +142,92 @@ table th {
     display: none;
 }
 
+/******************** 404 page start **********************/
+
+.error-page-container {
+    margin-top: 100px;
+}
+
+.error-page-container__text-box {
+    margin-top: 150px;
+}
+
+.error-page-container__text-box__link {
+    margin-bottom: 25px;
+}
+
+.error-page-container__img {
+    width: 100%;
+}
+
+.error-page-container__text-box__p {
+    color: #007bff;
+}
+
+/******************** contact start **********************/
+
+.contact-sec .contact-details {
+    padding-top: 50px !important;
+}
+
+.d-block.text-blue.contact-sec__h2__span {
+    margin: 20px 0 -10px 0;
+}
+
+/******************** all-products start **********************/
+
+.row.main-heading {
+    margin-bottom: 50px;
+}
+
+.slider1__img {
+    height: 550px !important;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
 /******************** media query start **********************/
 
-@media screen and (max-width: 959px) {
-
-    .row.align-items-center.align-items-center--formating {
-        margin: 0 70px;
-    }
-
-}
+@media screen and (max-width: 959px) {}
 
 @media screen and (max-width: 767px) {
 
+    .navbar.fixedmenu .logo-scrolled,
+    .navbar .logo-default {
+        width: 120px;
+        position: relative;
+        bottom: 15px;
+    }
+
+    .center-brand {
+        height: 105px !important;
+    }
+
     #sidemenu_toggle {
         display: block !important;
+    }
+
+    #home-banner {
+        margin-top: 100px !important;
     }
 
     .strong-font--formating {
         margin: 20px 0;
     }
 
+    .main-font.counter-container__h2 {
+        font-size: 26px;
+    }
+
     .counter-container__table__thead__h3 {
         display: block;
         margin-bottom: 70px;
+    }
+
+    .slider1__img {
+        height: 350px !important;
+        margin-bottom: 7px;
     }
 
     table {
@@ -191,7 +277,14 @@ table th {
         border-bottom: 0;
     }
 
-    .mt-5, .my-5 {
+    .mt-5,
+    .my-5 {
         margin-top: 0 !important;
     }
+
+    #before-after-slider .container {
+        width: 100%;
+        padding: 0 20px
+    }
+
 }

@@ -9,6 +9,8 @@ function homeController()
     $getSuvTerepjaro = suvTerepjaro($dbc);
     $getKishaszonjarmu = kishaszonjarmu($dbc);
     $getBelsoExtrak = belsoExtrak($dbc);
+    $getTelefonszam = telefonszam($dbc);
+    $getBekoszonoSzoveg = bekoszonoSzoveg($dbc);
 
     return [
         "home",
@@ -20,6 +22,8 @@ function homeController()
             "getSuvTerepjaro" => $getSuvTerepjaro,
             "getKishaszonjarmu" => $getKishaszonjarmu,
             "getBelsoExtrak" => $getBelsoExtrak,
+            "getTelefonszam" => $getTelefonszam,
+            "getBekoszonoSzoveg" => $getBekoszonoSzoveg,
         ]
     ];
 }

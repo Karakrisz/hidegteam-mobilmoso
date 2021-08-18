@@ -46,6 +46,8 @@ function esc($string)
 function getConnection()
 {
     $dbc = mysqli_connect(HOST, DB_USER, DB_PASS, DB_NAME);
+    $sql = "set names utf8";
+    mysqli_query($dbc, $sql);
     if (!$dbc) {
         logMessage('ERROR', 'Connection error:' . mysqli_connect_error());
         errorPage();
@@ -127,4 +129,26 @@ function belsoExtrak($dbc)
 }
 
 
-var_dump(mysqli_fetch_all($result, MYSQLI_ASSOC));
+function telefonszam($dbc)
+{
+    if ($statement = mysqli_prepare($dbc, 'SELECT * from telefonszam')) {
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($dbc));
+        errorPage();
+    }
+}
+
+function bekoszonoSzoveg($dbc)
+{
+    if ($statement = mysqli_prepare($dbc, 'SELECT * from bekoszono_szoveg')) {
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($dbc));
+        errorPage();
+    }
+}
