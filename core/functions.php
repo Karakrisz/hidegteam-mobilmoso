@@ -152,3 +152,15 @@ function bekoszonoSzoveg($dbc)
         errorPage();
     }
 }
+
+function kapcsolat($dbc)
+{
+    if ($statement = mysqli_prepare($dbc, 'SELECT * from kapcsolat')) {
+        mysqli_stmt_execute($statement);
+        $result = mysqli_stmt_get_result($statement);
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    } else {
+        logMessage('ERROR', 'Query error: ' . mysqli_error($dbc));
+        errorPage();
+    }
+}

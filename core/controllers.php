@@ -11,6 +11,7 @@ function homeController()
     $getBelsoExtrak = belsoExtrak($dbc);
     $getTelefonszam = telefonszam($dbc);
     $getBekoszonoSzoveg = bekoszonoSzoveg($dbc);
+    $getKapcsolat = kapcsolat($dbc);
 
     return [
         "home",
@@ -24,6 +25,7 @@ function homeController()
             "getBelsoExtrak" => $getBelsoExtrak,
             "getTelefonszam" => $getTelefonszam,
             "getBekoszonoSzoveg" => $getBekoszonoSzoveg,
+            "getKapcsolat" => $getKapcsolat,
         ]
     ];
 }

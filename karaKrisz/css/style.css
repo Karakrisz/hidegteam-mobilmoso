@@ -187,6 +187,11 @@ table th {
     margin-bottom: 20px;
 }
 
+.all-products__h6 {
+    text-align: center;
+    margin-top: 110px;
+}
+
 /******************** media query start **********************/
 
 @media screen and (max-width: 959px) {}
@@ -228,6 +233,10 @@ table th {
     .slider1__img {
         height: 350px !important;
         margin-bottom: 7px;
+    }
+
+    .all-products__h6 {
+        margin-top: 60px;
     }
 
     table {

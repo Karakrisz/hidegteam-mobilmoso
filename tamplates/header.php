@@ -36,7 +36,7 @@
                 </button>
                 <li class="top-personal-info">
                     <?php foreach ($getTelefonszam as $telefonszam) : ?>
-                        <a href="tel:+<?php esc($telefonszam["telefonszam"]) ?>"><i class="las la-phone"></i> + <?php esc($telefonszam["telefonszam"]) ?></a>
+                        <a href="tel:+<?php esc($telefonszam["telefonszam"]) ?>"><i class="las la-phone"></i><?php esc($telefonszam["telefonszam"]) ?></a>
                     <?php endforeach; ?>
                 </li>
                 <div class="collapse navbar-collapse" id="xenav">
@@ -59,7 +59,7 @@
                 </div>
                 <div class="navbar-social side-icons">
                     <ul class="list-unstyled d-flex m-0">
-                        <a class="social-icon-clr" href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-icon-clr" target="_blank" href="https://www.facebook.com/profile.php?id=100023989812801"><i class="fab fa-facebook-f"></i></a>
                         <a class="social-icon-clr" href="javascript:void(0);"><i class="fab fa-instagram"></i></a>
                     </ul>
                 </div>

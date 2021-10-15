@@ -127,18 +127,18 @@
             <div class="row">
 
                 <div class="col-xl-6 col-lg-6 col-md-12 col-12">
-                    <div id="slider1" class="beer-slider" data-beer-label="before" data-start="25">
+                    <div id="slider1" class="beer-slider" data-beer-label="after" data-start="25">
                         <img class="slider1__img" src="karaKrisz/img/referencia/referencia.jpg" alt="Dogs - before, unprocessed image">
-                        <div class="beer-reveal" data-beer-label="after">
+                        <div class="beer-reveal" data-beer-label="before">
                             <img class="slider1__img" src="karaKrisz/img/referencia/referencia-2.jpg" alt="Dogs - after, processed photo">
                         </div>
                     </div>
                 </div>
 
                 <div class="col-xl-6 col-lg-6 col-md-12 col-12">
-                    <div id="slider2" class="beer-slider beer-slider-wlabels" data-beer-label="before" data-start="75">
+                    <div id="slider2" class="beer-slider beer-slider-wlabels" data-beer-label="after" data-start="75">
                         <img class="slider1__img" src="karaKrisz/img/referencia/referencia-3.jpg" alt="Original baltic seashore">
-                        <div class="beer-reveal" data-beer-label="after">
+                        <div class="beer-reveal" data-beer-label="before">
                             <img class="slider1__img" src="karaKrisz/img/referencia/referencia-4.jpg" alt="Baltic seashore - processed image Warmsphere preset">
                         </div>
                     </div>
@@ -164,6 +164,10 @@
                 </div>
 
             </div>
+
+            <h6 class="all-products__h6">
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100023989812801" class="all-products__h6__link text-capitalize btn-red">További referenciaképek</a>
+            </h6>
 
         </div>
     </section>
@@ -375,8 +379,8 @@
 
             <div class="row align-items-center">
                 <div class="counter-content counter-content--formating">
-                    <h3 class="my-3">Kiszállítási díj Kaposváron kívülre: xxx Ft/Km ??? 50 Ft/km?</h3>
-                    <p class="alt-font">Extra szennyeződés esetén +10% kerül felszámításra. Az árak bruttó árak és forintban értendők. A kiszállás díját Kaposvár területén belül tartalmazzák.</p>
+                    <h3 class="my-3">Kiszállítási díj Pécsen és Kaposváron kívülre: 50 Ft/Km</h3>
+                    <p class="alt-font">Extra szennyeződés esetén +10% kerül felszámításra. Az árak bruttó árak és forintban értendők. A kiszállás díját Pécs, valamint Kaposvár területén belül tartalmazzák.</p>
                 </div>
                 <div class="col-12 col-md-12">
                     <span class="strong-font strong-font--formating">Külső extrák</span>
@@ -412,8 +416,8 @@
                     <div class="col-12 col-md-6">
                         <div class="parallax-box">
                             <h4 class="parallax-box__h4 strong-font">Kedvezmények</h4>
-                            <h5 class="parallax-box__h5">Flotta kedvezmény (5, vagy e feletti számú autó esetén XXX % kedvezmény</h5>
-                            <h5 class="parallax-box__h5">5, vagy több jármű egyidejű takarítása XXX % kedvezmény</h5>
+                            <h5 class="parallax-box__h5">Flotta kedvezmény (5, vagy e feletti számú autó esetén)</h5>
+                            <!-- <h5 class="parallax-box__h5">5, vagy több jármű egyidejű takarítása XXX % kedvezmény</h5> -->
                         </div>
                     </div>
                 </div>
@@ -423,17 +427,17 @@
         <div class="row align-items-center">
             <div class="container">
                 <div class="col-12 col-md-12">
-                    <div class="counter-content">
+                    <!-- <div class="counter-content">
                         <h3 class="my-3">Online foglalás</h3>
                         <p class="alt-font">Ide kellene valami gomb, ami a beágyazott (gmail-es naptárunkkal összekötött pl. youcanbookme) naptárra irányít.</p>
-                    </div>
+                    </div> -->
 
                     <div class="counter-content">
                         <h3 class="counter-content__h3" class="my-3">Gyakran Ismételt Kérdések</h3>
                         <h5 class="counter-content__h5">Bankkártyával tudok fizetni?</h5>
                         <p class="alt-font">Jelenleg a kártyás fizetés nem megoldható. A helyszínen készpénzzel lehet fizetni.</p>
-                        <h5 class="counter-content__h5">Hova tudok rendelni?</h5>
-                        <p class="alt-font">Mosóink csak a térképen jelölt xxx Zónába tudnak jelenleg kimenni. Ezt a területet folyamatosan bővítjük: (Kattints a képre.)</p>
+                        <!-- <h5 class="counter-content__h5">Hova tudok rendelni?</h5>
+                        <p class="alt-font">Mosóink csak a térképen jelölt xxx Zónába tudnak jelenleg kimenni. Ezt a területet folyamatosan bővítjük: (Kattints a képre.)</p>  -->
                         <h5 class="counter-content__h5">Mennyi időt vesz igénybe a mosás?</h5>
                         <p class="alt-font">Ez attól függ milyen szolgáltatást, mekkora autóra kérsz. Telefonos megrendeléskor a kollégánk kiszámolja neked. De mindenképpen másfél órán belül elkészülünk, ha SOS rendelést adsz le. Ha pedig előrendelnél, akkor biztosan nem kell várakoznod.</p>
                         <h5 class="counter-content__h5">Nem karcol?</h5>
@@ -546,17 +550,17 @@
                         <p class="text alt-font">There are many variations of passages of Lorem Ipsum available, but the
                             majority have suffered .</p> -->
                         <ul>
-                            <li><i aria-hidden="true" class="fas fa-map-marker-alt"></i> 123 Park Avenue, New York,
-                                United States </li>
-                            <li><i aria-hidden="true" class="fas fa-phone-volume"></i>
-                                <span>+1 631 1234 5678</span>
-                                <span>+1 631 1234 5678</span>
-                            </li>
-                            <li><i aria-hidden="true" class="fas fa-paper-plane"></i>email@website.com</li>
+                            <?php foreach ($getKapcsolat as $kapcsolat) : ?>
+                                <li><i aria-hidden="true" class="fas fa-map-marker-alt"></i> <?php esc($kapcsolat["address"]) ?> </li>
+                                <li><i aria-hidden="true" class="fas fa-phone-volume"></i>
+                                    <span> <?php esc($kapcsolat["telefon"]) ?> </span>
+                                </li>
+                                <li><i aria-hidden="true" class="fas fa-paper-plane"></i><?php esc($kapcsolat["email"]) ?></li>
+                            <?php endforeach; ?>
                         </ul>
                         <div class="slider-social side-icons">
                             <ul class="list-unstyled d-flex">
-                                <a class="social-icon" href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a>
+                                <a class="social-icon" target="_blank" href="https://www.facebook.com/profile.php?id=100023989812801"><i class="fab fa-facebook-f"></i></a>
                                 <a class="social-icon" href="javascript:void(0);"><i class="fab fa-instagram"></i></a>
                             </ul>
                         </div>
